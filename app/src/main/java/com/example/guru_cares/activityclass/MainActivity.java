@@ -1,14 +1,16 @@
-package com.example.guru_cares;
+package com.example.guru_cares.activityclass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class login extends AppCompatActivity {
+import com.example.guru_cares.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
     }
 }
