@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#edf0f5"
+    android:layout_height="match_parent"
+    tools:context="Entry1">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Guru"
+        android:textColor="#0B5460"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/title"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:text="Cares"
+        android:textColor="#00B8D4"
+        android:textSize="30sp" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/schoolbag"
+        android:layout_centerVertical="true"
+        android:src="@drawable/schoolbag"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/schoolbag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enroll"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:id="@+id/head1"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0B5460"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:id="@+id/head2"
+        android:layout_below="@id/schoolbag"
+        android:layout_toRightOf="@+id/head1"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#00B8D4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses :"
+        android:layout_toRightOf="@+id/head2"
+        android:layout_below="@id/schoolbag"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#0B5460"/>
+
+
+    <TextView
+        android:id="@+id/subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Guru Cares allow's you to enroll on your subject courses with e-learning material"
+        android:textColor="#0B5460"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/nextbtn"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/barbackground"
+            android:id="@+id/entry1bar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/entry2bar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/barbackgroundempty"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/next"
+        android:id="@+id/nextbtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

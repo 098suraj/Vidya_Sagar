@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#edf0f5"
+    android:layout_height="match_parent"
+    tools:context=".Entry2">
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Guru"
+        android:textColor="#0B5460"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/title"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:text="Cares"
+        android:textColor="#00B8D4"
+        android:textSize="30sp" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/quiz"
+        android:layout_centerVertical="true"
+        android:src="@drawable/quiz"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:id="@+id/head1"
+        android:layout_marginLeft="20dp"
+        android:textColor="#0B5460"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full"
+        android:id="@+id/head2"
+        android:layout_below="@id/quiz"
+        android:layout_toRightOf="@+id/head1"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#00B8D4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz :"
+        android:layout_toRightOf="@+id/head2"
+        android:layout_below="@id/quiz"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#0B5460"/>
+
+
+    <TextView
+        android:layout_marginLeft="20sp"
+        android:textColor="#0B5460"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_below="@id/head1"
+        android:textSize="18sp"
+        android:text="Guru Cares allow's you to have full quiz on your respective subject courses"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/nextbtn"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/entry1bar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/barbackground"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/entry2bar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/barbackground"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/nextbtn"
+        android:src="@drawable/next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:padding="15dp"
+        android:id="@+id/backbtn"
+        android:src="@drawable/back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf0f5"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Guru Cares Welcomes You!"
+            android:textColor="#0B5460"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:id="@+id/username"
+            android:gravity="center"
+            android:textColorHint="#0B5460"
+            android:background="@drawable/blueoutlinebg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/password"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#0B5460"
+            android:background="@drawable/blueoutlinebg"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/navigation_bar_background"
+            android:text="Log In"
+            android:id="@+id/loginbtn"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#0B5460"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/oxygen"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Finest investment Guru Care's can put is into The youth of this nation, Enjoy your process of learning with us."
+            android:textColor="#0B5460"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
