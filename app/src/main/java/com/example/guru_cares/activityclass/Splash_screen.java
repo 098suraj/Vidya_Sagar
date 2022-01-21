@@ -1,10 +1,12 @@
-package com.example.guru_cares;
+package com.example.guru_cares.activityclass;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.guru_cares.R;
 
 public class Splash_screen extends AppCompatActivity {
     final private static int SPLASH=3000;
