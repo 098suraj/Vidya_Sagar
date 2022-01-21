@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Guru"
+        android:text="Vidya"
         android:textColor="#0B5460"
         android:textSize="30sp" />
 
@@ -30,7 +30,7 @@
         android:layout_toRightOf="@id/title"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center_horizontal"
-        android:text="Cares"
+        android:text="Sagar"
         android:textColor="#00B8D4"
         android:textSize="30sp" />
 
@@ -91,7 +91,7 @@
         android:fontFamily="@font/poppins"
         android:layout_below="@id/head1"
         android:textSize="18sp"
-        android:text="Guru Cares allow's you to have full quiz on your respective subject courses"
+        android:text="Vidya Sagar allow's you to have full quiz on your respective subject courses"
         />
 
 

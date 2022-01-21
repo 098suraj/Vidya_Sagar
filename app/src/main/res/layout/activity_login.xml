@@ -22,7 +22,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Guru Cares Welcomes You!"
+            android:text="Vidya Sagar Welcomes You!"
             android:textColor="#0B5460"
             android:fontFamily="@font/poppins_bold"
             android:textSize="24sp"
@@ -74,7 +74,7 @@
             android:fontFamily="@font/oxygen"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Finest investment Guru Care's can put is into The youth of this nation, Enjoy your process of learning with us."
+            android:text="Finest investment Vidya Sagar's can put is into The youth of this nation, Enjoy your process of learning with us."
             android:textColor="#0B5460"
             android:textSize="16sp"
             android:textStyle="bold" />
