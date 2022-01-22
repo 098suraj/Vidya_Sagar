@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentclass.AdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a Notice"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="40sp"/>
+
+        <View
+            android:layout_width="310dp"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/notice_admin_background"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Notice Title"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/noticeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Add Notice Title"/>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/notice_admin_background"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add Notice"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/noticeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Add Notice Here"/>
+
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/sendNotice"
+            android:layout_width="121dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/notice_admin_background"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Send"
+            android:textSize="18sp"
+            app:backgroundTint="#512C39" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/taskevaluation"
+            android:padding="30dp"/>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

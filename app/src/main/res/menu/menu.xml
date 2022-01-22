@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group>
+    <item
+        android:id="@+id/homemenu"
+        android:icon="@drawable/homecolor"
+        android:title="Home"/>
+    <item
+        android:id="@+id/attendancemenu"
+        android:icon="@drawable/attendancecolor"
+        android:title="Attendance"/>
+    <item
+        android:id="@+id/dashboardmenu"
+        android:icon="@drawable/dashboardcolor"
+        android:title="Dashboard"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/profilemenu"
+        android:icon="@drawable/usercolor"/>
+</group>
+</menu>

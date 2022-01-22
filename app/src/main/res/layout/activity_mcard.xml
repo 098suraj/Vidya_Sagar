@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityclass.mcard">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/back"
+            android:padding="17dp"
+            android:id="@+id/backbtn"
+            android:layout_weight="5"/>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="4.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+            <Button
+                android:layout_width="210dp"
+                android:id="@+id/btn1"
+                android:layout_height="70dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/poppins_bold"
+                android:backgroundTint="#00BCD4"
+                android:rotation="-90"
+                android:layout_marginLeft="-70dp"
+                android:text="Profile Info"
+                android:textSize="17dp"
+                app:cornerRadius="15dp" />
+
+            <Button
+                android:layout_width="210dp"
+                android:id="@+id/btn2"
+                android:layout_height="70dp"
+                android:layout_marginTop="200dp"
+                android:rotation="-90"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_bold"
+                android:backgroundTint="#00BCD4"
+                android:layout_marginLeft="-70dp"
+                android:text="Academic Info"
+                android:textSize="17dp"
+                app:cornerRadius="15dp" />
+
+
+            <Button
+                android:layout_width="210dp"
+                android:id="@+id/btn3"
+                android:layout_height="70dp"
+                android:layout_marginTop="200dp"
+                android:textAllCaps="false"
+                android:backgroundTint="#00BCD4"
+                android:layout_marginBottom="100dp"
+                android:fontFamily="@font/poppins_bold"
+                android:rotation="-90"
+                android:layout_marginLeft="-70dp"
+                android:text="Student Info"
+                android:textSize="17dp"
+                app:cornerRadius="15dp" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/Frame1"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -41,6 +41,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
+                            android:id="@+id/toogle"
                             android:layout_height="match_parent"
                             android:src="@drawable/menu"
                             android:padding="9dp"
@@ -410,4 +411,5 @@
 
         </RelativeLayout>
     </ScrollView>
+
 </FrameLayout>

@@ -2,11 +2,21 @@ package com.example.guru_cares;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.app.progresviews.ProgressWheel;
+import com.example.guru_cares.customadapters.Attendance_Adapter;
+import com.example.guru_cares.customadapters.Mainviewmodel;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,7 +24,10 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Attendance extends Fragment {
-
+    ArrayList<Mainviewmodel> mainviewmodels;
+    RecyclerView recyclerView;
+    Attendance_Adapter Mainadapter;
+    ProgressWheel mainwheel;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -60,5 +73,28 @@ public class Attendance extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_attendance, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        recyclerView = (RecyclerView) view.findViewById(R.id.attendance_recview);
+        mainwheel = view.findViewById(R.id.wheelprogress);
+        String[] subjectname ={"Chemistry","Maths","Physics","Computer","Drawing","English","German"};
+        Integer[] percentage ={90,67,87,96,45,74,68};
+
+        mainviewmodels = new ArrayList<>();
+
+        for(int i=0;i<percentage.length;i++){
+            Mainviewmodel model = new Mainviewmodel(percentage[i],subjectname[i]);
+            mainviewmodels.add(model);
+        }
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false);
+        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        Mainadapter = new Attendance_Adapter(requireContext(),mainviewmodels);
+        recyclerView.setAdapter(Mainadapter);
     }
 }

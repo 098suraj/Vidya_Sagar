@@ -1,4 +1,4 @@
-package com.example.guru_cares.fragmentclass;
+package com.example.guru_cares.Fragmentclass;
 
 import android.content.Intent;
 import android.os.Bundle;

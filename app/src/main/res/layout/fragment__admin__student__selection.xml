@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF9FF"
+    tools:context=".fragmentclass.fragment_Admin_Student_Selection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Select a Role to Proceed"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/poppins"/>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adminAccess"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/admin"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"
+                android:layout_marginEnd="70dp"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/studentAccess"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/students"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="367dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_weight="1"
+                android:text="Admin"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="Student"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/attendancepng"
+            android:padding="35dp"/>
+
+
+
+    </LinearLayout>
+</FrameLayout>

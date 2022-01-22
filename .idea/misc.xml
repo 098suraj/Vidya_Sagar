@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/activity_maincalendar.xml" value="0.1" />
         <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/activity_questions_nanswers.xml" value="0.22864583333333333" />
         <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/custom_question_layout.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/fragment__admin__student__selection.xml" value="0.1" />
+        <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/fragment_admin.xml" value="0.1" />
+        <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/fragment_dash.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/ajays/AndroidStudioProjects/Vidya_Sagar/app/src/main/res/layout/fragment_quiz_info.xml" value="0.22146739130434784" />
       </map>
     </option>

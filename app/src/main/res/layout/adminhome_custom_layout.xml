@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="320dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/customcard"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#E3FAFD"
+        android:layout_marginRight="20dp"
+        android:layout_height="490dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/subjectpic"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:padding="10dp"
+                android:src="@drawable/pp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/subjectname"
+                android:layout_weight="2.3"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Subject Name"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/facultyname"
+                android:layout_weight="2.4"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:text="- Monika Agarwal"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2.3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2.3"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"
+                    android:id="@+id/delete"
+                    android:src="@drawable/remove"
+                    android:gravity="center" />
+
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2.3"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="15sp"
+                    android:id="@+id/edit"
+                    android:src="@drawable/edit"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

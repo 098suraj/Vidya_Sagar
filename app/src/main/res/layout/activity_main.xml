@@ -1,68 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="#FFFFFF"
+    android:id="@+id/drawerlayout"
     android:layout_height="match_parent"
     tools:context=".activityclass.MainActivity">
 
 
-    <FrameLayout
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/menu" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/fragment"
-        android:layout_above="@id/navigation_bar"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:id="@+id/navigation_bar"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:padding="10dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/home"
-            android:id="@+id/home"
-            android:layout_weight="1"/>
-
-        <ImageView
+        android:background="#FFFFFF">
+        <FrameLayout
+            android:id="@+id/fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp"
-            android:id="@+id/attendance"
-            android:src="@drawable/attendance"
-            android:layout_weight="1"/>
+            android:layout_above="@id/navigation_bar">
 
-        <ImageView
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navigation_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/dashboard"
-            android:padding="10dp"
-            android:id="@+id/dash"
-            android:layout_weight="1"/>
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:padding="10dp"
-            android:layout_height="match_parent"
-            android:id="@+id/user"
-            android:src="@drawable/user"
-            android:layout_weight="1"/>
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/attendance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/attendance" />
+
+            <ImageView
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/dashboard" />
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/user" />
 
 
+        </LinearLayout>
 
+    </RelativeLayout>
 
-
-
-
-    </LinearLayout>
-
-
-
-
-</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -21,9 +21,7 @@ import com.example.guru_cares.modelclass.QuizModal;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-
-import static com.example.guru_cares.fragmentclass.quiz_info.quizModals;
+import static com.example.guru_cares.Fragmentclass.quiz_info.quizModals;
 
 
 public class question_custom_adapter extends RecyclerView.Adapter<question_custom_adapter.myviewholder> {

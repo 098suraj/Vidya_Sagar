@@ -49,6 +49,7 @@ dependencies {
     implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
 
     implementation 'com.zekapp.library:progreswheelview:1.1.5'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
 }

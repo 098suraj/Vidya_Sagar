@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf0f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentclass.addsubject">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/back"
+                    android:padding="10dp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Add Your, "
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
+                    android:layout_weight="1.5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subject "
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins"
+                    android:layout_weight="1"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/puzzle"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Subject Title : "
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:fontFamily="@font/poppins"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:id="@+id/titlename"
+                        android:hint="Enter your title"
+                        android:fontFamily="@font/poppins"/>
+
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="200dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/customcard"
+                    android:layout_marginTop="40dp"
+
+                    app:cardBackgroundColor="#FFE8F2"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="300dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:id="@+id/subjectpic"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:src="@drawable/subjects"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/subjectname"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:text="Subject Name"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/facultyname"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:text="- Teacher Name"/>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="2.1"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="15sp"
+                            android:id="@+id/enroll"
+                            android:textColor="@color/white"
+                            android:background="@drawable/grey_background"
+                            android:gravity="center"
+                            android:text="Enroll"/>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/customizebtn"
+                    android:background="@drawable/blueborder"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text="Customize your Subject Card"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Add"
+            android:id="@+id/addbtn"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="#244AB5"
+            android:background="@drawable/navigation_bar_background"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

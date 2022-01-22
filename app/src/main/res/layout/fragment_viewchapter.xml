@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf0f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentclass.viewchapter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:src="@drawable/back"
+                        android:padding="10dp"/>
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Your Subject, "
+                        android:textSize="25sp"
+                        android:id="@+id/subejctname"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:layout_weight="1.5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Chapter "
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        android:layout_weight="1"/>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:src="@drawable/puzzle"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Chapter Name : "
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:fontFamily="@font/poppins"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:id="@+id/chaptername"
+                            android:textSize="20sp"
+                            android:text="Chapter Name "
+                            android:fontFamily="@font/poppins_bold"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Chapter Description"
+                                android:layout_weight="1"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:src="@drawable/subjects"/>
+
+
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="40dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/chapterdescription"
+                            android:text="Description"
+                            android:fontFamily="@font/poppins_bold"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_gravity="center"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="3"
+                            android:id="@+id/removepdfbtn"
+                            android:visibility="gone"
+                            android:src="@drawable/remove"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/pdfpic"
+                            android:visibility="visible"
+                            android:padding="20dp"
+                            android:src="@drawable/file"/>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.3"
+                            android:text="View PDF"
+                            android:id="@+id/viewpdfbtn"
+                            android:visibility="visible"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:background="@drawable/darkredback"/>
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

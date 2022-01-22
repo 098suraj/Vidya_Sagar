@@ -2,11 +2,20 @@ package com.example.guru_cares;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.guru_cares.modelclass.student_info_model;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +68,99 @@ public class User extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user, container, false);
+        // Inflate the layout for this fragment
+        View v =  inflater.inflate(R.layout.fragment_user, container, false);
+
+
+        Bundle bundle = this.getArguments();
+        assert bundle != null;
+        String username = bundle.getString("username");
+        String userid = bundle.getString("userid");
+        String schoolname = (String) username.substring(8,13).toString();
+        String studentcode = username.substring(0,3);
+        String gradecode = username.substring(3,5);
+        String sectioncode = username.substring(5,7);
+
+
+        TextView frontname = v.findViewById(R.id.frontname);
+        TextView backname = v.findViewById(R.id.backname);
+        TextView phone = v.findViewById(R.id.phone);
+        TextView address = v.findViewById(R.id.address);
+        TextView usernameview =  v.findViewById(R.id.username);
+
+
+        if(studentcode.equals("100"))
+        {
+
+            FirebaseDatabase db = FirebaseDatabase.getInstance();
+            DatabaseReference reference = db.getReference().child("schools").child(schoolname).child(studentcode).child(gradecode).child(sectioncode).child(userid);
+
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                    student_info_model info = snapshot.getValue(student_info_model.class);
+                    frontname.setText(info.getName());
+                    backname.setText(info.getBackname());
+                    phone.setText(info.getPhone());
+                    address.setText(info.getAddress());
+                    usernameview.setText(username);
+
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+
+
+
+
+        }
+        else if(studentcode.equals("200"))
+        {
+
+            FirebaseDatabase db = FirebaseDatabase.getInstance();
+            DatabaseReference reference = db.getReference().child("schools").child(schoolname).child("teachers").child(userid);
+
+            reference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                    student_info_model info = snapshot.getValue(student_info_model.class);
+                    frontname.setText(info.getName());
+                    backname.setText(info.getBackname());
+                    phone.setText(info.getPhone());
+                    address.setText(info.getAddress());
+                    usernameview.setText(username);
+
+
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+
+                }
+            });
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        return v;
     }
 }

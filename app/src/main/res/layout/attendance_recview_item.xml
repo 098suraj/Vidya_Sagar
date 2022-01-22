@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.app.progresviews.ProgressWheel
+        android:id="@+id/recview_item_wheelprogress"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:barWidth="10dp"
+        app:countTextColor="@android:color/black"
+        app:countTextSize="20sp"
+        app:defTextColor="@android:color/black"
+        app:defTextSize="10sp"
+        app:marginBtwText="15dp"
+        app:percentage="180"
+        app:progressColor="#00BFA5" />
+
+    <TextView
+        android:id="@+id/attendance_recview_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recview_item_wheelprogress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/poppins"
+        android:text="Chemistry"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

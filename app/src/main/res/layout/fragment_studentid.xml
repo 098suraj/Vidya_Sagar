@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragmentclass.Studentid">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="50dp"
+        android:backgroundTint="#201E1E"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="@drawable/blueborder"
+            android:layout_height="match_parent"
+            android:padding="18dp"
+            android:src="@drawable/userdp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#01505C"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="245dp"
+        android:text="Student's ID"
+        android:textColor="#026C7C"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        android:text="Admission No."
+        android:textColor="#026C7C"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="315dp"
+        android:text="Class Roll No."
+        android:textColor="#026C7C"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:text="Academic Session."
+        android:textColor="#026C7C"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="385dp"
+        android:text="Class."
+        android:textColor="#026C7C"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="415dp"
+        android:text="Section."
+        android:textColor="#026C7C"
+        android:fontFamily="@font/poppins"
+        android:textSize="20dp" />
+
+</FrameLayout>
