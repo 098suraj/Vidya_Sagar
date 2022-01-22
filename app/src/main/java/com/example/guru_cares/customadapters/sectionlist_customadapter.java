@@ -94,7 +94,7 @@ public class sectionlist_customadapter extends RecyclerView.Adapter<sectionlist_
                 i.putExtra("sectionname", sectionslist.get(position));
                 i.putExtra("userid", userid);
                 i.putExtra("username", username);
-                //activity.startActivity(i);
+                activity.startActivity(i);
 
 
 

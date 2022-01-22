@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Attendance">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/heading_attendance_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:text="Overall Attendance"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <com.app.progresviews.ProgressWheel
+                android:id="@+id/wheelprogress"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_below="@+id/heading_attendance_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:barWidth="20dp"
+                app:countText="75%"
+                app:countTextColor="@android:color/black"
+                app:countTextSize="30sp"
+                app:defTextColor="@android:color/black"
+                app:defTextSize="10sp"
+                app:marginBtwText="15dp"
+                app:percentage="270"
+                app:progressColor="#00BFA5"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/attendance_recview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wheelprogress"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="30dp"
+                tools:itemCount="1"
+                tools:listitem="@layout/attendance_recview_item" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/midbanner"
+                android:layout_below="@+id/attendance_recview"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@drawable/barbackground"
+                    android:layout_alignParentBottom="true"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dviewmodel"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent">
+
+
+                        </View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Know Your\nAttendance Portal"
+                            android:layout_weight="1"
+                            android:padding="20dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="#004239" />
+
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/attendancepng"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/midbanner"
+                android:id="@+id/presentmark"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                >
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#00BFA5"
+                    android:id="@+id/color_green"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present :"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/attendance_percentage"
+                        android:text="17 | 200"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/attendance_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="85.5%"
+                        android:textColor="#00BFA5"
+                        android:fontFamily="@font/poppins"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/presentmark"
+                android:id="@+id/absentmark"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                >
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#DCDCDC"
+                    android:id="@+id/blue"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Absent :"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/absent_percentage"
+                        android:text="17 | 200"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/absent_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14.5%"
+                        android:textColor="#D50000"
+                        android:fontFamily="@font/poppins"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>
